@@ -1,0 +1,3 @@
+episode,reward,collisions,completion,steps,mean_inter_agent_distance,coordination_score,synchronization_score
+1,21.00750600749254,0,1,1,0.0,1.0,1.0
+2,0.10855238437652573,0,0,200,0.0,1.0,1.0

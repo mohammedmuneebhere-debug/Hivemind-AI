@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]
+pydantic
+torch
+stable-baselines3
+gymnasium
+gym
+numpy
+matplotlib
+tensorboard
+wandb
+

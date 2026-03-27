@@ -1,0 +1,13 @@
+{
+  "model": "PPO (CTDE)",
+  "episodes": 50,
+  "deterministic": true,
+  "success_rate": 0.8999999761581421,
+  "avg_reward": 29.808481216430664,
+  "collision_rate": 0.24,
+  "avg_steps": 44.79999923706055,
+  "mean_inter_agent_distance": 0.8201857805252075,
+  "coordination_score": 0.9534600973129272,
+  "synchronization_score": 0.888465404510498,
+  "timestamp": "20260323_194325"
+}

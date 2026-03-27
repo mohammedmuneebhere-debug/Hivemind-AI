@@ -1,0 +1,8 @@
+experiment,setup,agents,reward,success_rate,collision_rate,avg_steps
+Exp1_AgentsScaling,agents=1,1,10.558029174804688,0.5,0.0,100.5
+Exp1_AgentsScaling,agents=2,2,-0.20000000298023224,0.0,0.0,200.0
+Exp1_AgentsScaling,agents=3,3,-0.9575867056846619,0.0,0.5,200.0
+Exp2_RewardAblation,without_shaping,2,-0.20000000298023224,0.0,0.0,200.0
+Exp2_RewardAblation,with_shaping,2,-0.20000000298023224,0.0,0.0,200.0
+Exp3_CriticComparison,default,2,2.021301031112671,0.0,0.5,200.0
+Exp3_CriticComparison,ctde,2,-0.20000000298023224,0.0,0.0,200.0

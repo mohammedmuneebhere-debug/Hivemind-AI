@@ -1,0 +1,36 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Python caches / virtual envs
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Frontend dependencies / build artifacts
+demo-ui/frontend/node_modules/
+demo-ui/frontend/dist/
+demo-ui/frontend/.vite/
+demo-ui/frontend/.cache/
+
+# Backend/runtime artifacts
+*.log
+*.tmp
+*.pid
+
+# Optional: uncomment if you want to ignore runtime logs
+# logs/

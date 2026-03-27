@@ -1,0 +1,213 @@
+:root {
+  --bg: #0b1220;
+  --card: rgba(17, 26, 46, 0.92);
+  --stroke: rgba(255, 255, 255, 0.10);
+  --text: #e5e7eb;
+  --muted: rgba(229, 231, 235, 0.7);
+  --accent: #61dafb;
+}
+
+.app {
+  min-height: 100vh;
+  background: radial-gradient(1200px 600px at 10% 0%, rgba(97, 218, 251, 0.15), transparent),
+    radial-gradient(900px 500px at 90% 0%, rgba(34, 197, 94, 0.12), transparent),
+    var(--bg);
+  color: var(--text);
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 22px 18px 28px;
+}
+
+.header {
+  display: flex;
+  gap: 14px;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.title {
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+  margin-bottom: 4px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+
+.subtitle2 {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.92);
+  font-weight: 650;
+}
+
+.controls {
+  width: 320px;
+  border: 1px solid var(--stroke);
+  background: rgba(17, 26, 46, 0.60);
+  border-radius: 16px;
+  padding: 14px;
+}
+
+.controlRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.controlLabel {
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.select {
+  flex: 1;
+  background: rgba(11, 18, 32, 0.9);
+  border: 1px solid var(--stroke);
+  color: var(--text);
+  border-radius: 12px;
+  padding: 8px 10px;
+}
+
+.btn {
+  width: 100%;
+  background: linear-gradient(135deg, rgba(97, 218, 251, 0.9), rgba(34, 197, 94, 0.55));
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: rgba(0, 0, 0, 0.78);
+  font-weight: 800;
+  border-radius: 14px;
+  padding: 10px 14px;
+  cursor: pointer;
+  transition: transform 0.08s ease, filter 0.2s ease;
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+  filter: grayscale(30%) brightness(0.85);
+}
+
+.btn:not(:disabled):hover {
+  transform: translateY(-1px);
+}
+
+.status {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.35;
+  min-height: 18px;
+}
+
+.heroBox {
+  height: 10px;
+  margin: 8px 0 18px;
+}
+
+.gridCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.card {
+  border: 1px solid var(--stroke);
+  background: var(--card);
+  border-radius: 16px;
+  padding: 14px 14px 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.cardLabel {
+  color: var(--muted);
+  font-weight: 700;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.cardValue {
+  font-size: 26px;
+  font-weight: 900;
+  letter-spacing: 0.2px;
+}
+
+.charts {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+@media (min-width: 1000px) {
+  .charts {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.chartCard {
+  border: 1px solid var(--stroke);
+  background: rgba(17, 26, 46, 0.65);
+  border-radius: 16px;
+  padding: 12px;
+}
+
+.chartTitle {
+  font-weight: 900;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.92);
+  margin-bottom: 8px;
+}
+
+.previewCard {
+  border: 1px dashed rgba(255, 255, 255, 0.22);
+  border-radius: 16px;
+  padding: 14px;
+  background: rgba(17, 26, 46, 0.30);
+}
+
+.previewText {
+  color: var(--muted);
+  line-height: 1.4;
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+.ioTableWrap {
+  margin-top: 6px;
+}
+
+.ioTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.ioTable th,
+.ioTable td {
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  padding: 8px 8px;
+}
+
+.ioTable th {
+  text-align: left;
+  color: rgba(229, 231, 235, 0.95);
+  font-weight: 800;
+  background: rgba(17, 26, 46, 0.65);
+}
+
+.ioTable td {
+  color: rgba(229, 231, 235, 0.85);
+}
+
